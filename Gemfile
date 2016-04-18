@@ -24,7 +24,7 @@ gem "sidekiq"
 gem "whenever"
 
 group :development, :test do
-  gem "mysql"
+  gem "mysql2"
   gem "pry"
   gem "web-console", "2.0.0.beta3"
   gem "spring", "1.1.3"

@@ -1,0 +1,161 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-inverse {
+  background-color: #DA0909;
+  border: 0;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #F51313;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #F51313;
+  color: #fff;
+}
+
+a {
+  color: #DA0909;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #DA0909;
+  text-decoration: underline;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: white;
+  text-decoration: none;
+  background-color: #F51313;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #F51313;
+}
+
+.jumbotron{
+  background: #333 url(/jumbotron.jpg) no-repeat fixed center ;
+  color: white;
+  height: 500px;
+  overflow: none;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+#feature {
+  color: black;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+#feature img{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 3px;
+}
+
+#feature a {
+  margin-bottom: 20px;
+}
+
+#details{
+  background-color: #DA0909;
+  color: #fff;
+}
+
+#details img{
+margin-top: 40px;
+}
+
+#details li{
+ font-size: 22px;
+ list-style: none;
+ line-height: 2em;
+}
+
+
+footer{
+ background: #333;
+ color: #fff;
+ padding: 30px 0 20px 0;
+}
+
+footer li{
+ float: left;
+ padding: 0 10px 0 10px;
+ list-style: none;
+}
+
+footer a{
+ color: #fff;
+ text-decoration: none !important;
+}
+
+footer p{
+ float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width:768px) and (max-width: 990px){
+  .jumbotron{
+    height:400px !important;
+    background-size: 100% 100%;
+  }
+  .jumbotron h1{
+    margin-top: -20px;
+  }
+  #details .logo{
+    display: none;
+  }
+}
+
+@media(max-width:768px){
+  .jumbotron{
+    height:300px !important;
+    background-size: 100% 100%;
+  }
+  .jumbotron h1{
+    margin-top: 10px;
+  }
+  #details .logo{
+    display: none;
+  }
+}
+
+@media(max-width:500px){
+  .jumbotron{
+    height: 350px !important;
+    background-image: none;
+    text-align: center;
+  }
+  .jumbotron{
+    margin: -20px auto 30px 0;
+    display: block;
+  }
+  #details .logo{
+    display: none;
+  }
+
+  footer .menu{
+    display: none !important;
+  }
+
+}
