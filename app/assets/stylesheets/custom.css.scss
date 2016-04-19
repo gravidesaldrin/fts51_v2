@@ -1,8 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* VARIABLES */
+
+$primary-color: #DA0909;
+$highlightened-color: #F51313;
+
 .navbar-inverse {
-  background-color: #DA0909;
+  background-color: $primary-color;
   border: 0;
 }
 
@@ -14,24 +19,24 @@
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: #F51313;
+  background-color: $highlightened-color;
 }
 
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
 .navbar-inverse .navbar-nav>.open>a:focus {
-  background-color: #F51313;
+  background-color: $highlightened-color;
   color: #fff;
 }
 
 a {
-  color: #DA0909;
+  color: $primary-color;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #DA0909;
+  color: $primary-color;
   text-decoration: underline;
 }
 
@@ -39,14 +44,14 @@ a:focus {
 .nav > li > a:focus {
   color: white;
   text-decoration: none;
-  background-color: #F51313;
+  background-color: $highlightened-color;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #F51313;
+  background-color: $highlightened-color;
 }
 
 .jumbotron{
@@ -76,40 +81,40 @@ a:focus {
 }
 
 #details{
-  background-color: #DA0909;
+  background-color: $primary-color;
   color: #fff;
 }
 
 #details img{
-margin-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #details li{
- font-size: 22px;
- list-style: none;
- line-height: 2em;
+  font-size: 22px;
+  list-style: none;
+  line-height: 2em;
 }
 
-
 footer{
- background: #333;
- color: #fff;
- padding: 30px 0 20px 0;
+  background: #333;
+  color: #fff;
+  padding: 30px 0 20px 0;
 }
 
 footer li{
- float: left;
- padding: 0 10px 0 10px;
- list-style: none;
+  float: left;
+  padding: 0 10px 0 10px;
+  list-style: none;
 }
 
 footer a{
- color: #fff;
- text-decoration: none !important;
+  color: #fff;
+  text-decoration: none !important;
 }
 
 footer p{
- float: right;
+  float: right;
 }
 
 /* MEDIA QUERIES */
@@ -125,6 +130,9 @@ footer p{
   #details .logo{
     display: none;
   }
+  footer .menu {
+    display: none !important;
+  }
 }
 
 @media(max-width:768px){
@@ -137,6 +145,9 @@ footer p{
   }
   #details .logo{
     display: none;
+  }
+  footer .menu {
+    display: none !important;
   }
 }
 
@@ -153,9 +164,74 @@ footer p{
   #details .logo{
     display: none;
   }
-
   footer .menu{
     display: none !important;
   }
+}
 
+body{
+  padding-botton: 0px;
+  font-family: "Open Sans", Arial, Tahoma;
+  color: $text-color;
+  font-size: 12px;
+}
+
+h2{
+  font-weigh: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-size: 1.5em;
+}
+
+section .mainpage{
+  margin-top:80px;
+  background: #DA0909 !important;
+  color: #fff !important;
+  a{
+    color: #fff !important;
+  }
+  header{
+    text-align: center;
+    h1{
+      margin:0;
+      padding: 20px 0 0 0;
+      font-size:2.2emp;
+      font-weight: 700;
+      text-transform:uppercase;
+      letter-spacing:-1px;
+      text-align:center;
+      line-height: 1.4em;
+    }
+  }
+  .owner-img{
+    margin-top: -80px;
+  }
+}
+
+ .contact-list{
+  padding: 0;
+  margin: 0;
+  li {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+img.contact-img{
+  width: 35px;
+  height: 35px;
+}
+
+.skills {
+  margin-right: 10px;
+}
+
+.work-list li {
+  list-style:none;
+  float: left;
+  padding: 0 10px 0 10px;
+  margin-bottom: 15px;
 }
